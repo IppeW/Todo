@@ -33,7 +33,6 @@ class WelcomeComponent extends Component {
 
     retrieceWelcomeMessage() {
 
-
         HelloWorldService.executeHelloWorldPathVariableService(this.props.match.params.name)
             .then(response => this.handleSuccessfulResponse(response))
             .catch(error => this.handleError(error))
